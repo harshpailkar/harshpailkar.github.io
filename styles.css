@@ -11,9 +11,44 @@ body{
 .logo {
   width: auto;
   height: 225px;
+  cursor: pointer;
+  margin-right: 580px;
+}
+
+.nav_links {
+  list-style: none;
+}
+
+.nav_links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav_links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+  color: #FFBD59;
+}
+
+li, a {
+  font-family: "Helvatica", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: white;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
   position: absolute;
-  left: -47px;
-  top: -50px;
+  top: -75px;
+  left: -80px;
 }
 
 .intro {
@@ -22,10 +57,10 @@ body{
   font-size: 75px;
   letter-spacing: -3px;
   word-spacing: -3px;
-  padding: 200px 0px 15px 35px;
+  padding: 220px 0px 15px 35px;
 }
 
-div{
+.home {
   width: 100%;
   height: 100vh;
   background: linear-gradient(-45deg, #04619F, #000000);
@@ -53,13 +88,14 @@ div{
 .byline {
   color: #D0D0D0;
   font-family: 'Helvetica', sans-serif;
-  font-size: 20px;
+  font-size: 16px;
+  font-weight: 700;
   letter-spacing: 3px;
   font-weight: normal;
   padding: 10px 0px 10px 40px;
 }
 
-.button {
+.contact-button {
   padding: 10px 50px;
   text-align: center;
   letter-spacing: 3px;
@@ -71,14 +107,17 @@ div{
   transition-duration: 0.4s;
   cursor: pointer;
   background-color: rgba(255, 255, 255, 0.0);
-  color: white;
-  border: 2px solid #D9D9D9;
+  color: #FFBD59;
+  border: 2px solid #FFBD59;
   position: absolute;
   left: 38px;
   top: 580px;
+  box-shadow: inset 0 0 0 0 #FFBD59;
+  transition: ease-out 0.3s;
 }
 
-.button:hover {
-  background-color: #D9D9D9;
+.contact-button:hover {
+  box-shadow: inset 300px 0 0 0 #FFBD59;
+  cursor: pointer;
   color: #434343;
 }
