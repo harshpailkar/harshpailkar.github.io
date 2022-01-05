@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 
-body{
-  overflow: hidden;
-}
-
 .logo {
   width: auto;
   height: 225px;
@@ -29,11 +25,11 @@ body{
 }
 
 .nav_links li a:hover {
-  color: #FFBD59;
+  color: #10DCC8;
 }
 
 li, a {
-  font-family: "Helvatica", sans-serif;
+  font-family: "Helvetica", sans-serif;
   font-size: 16px;
   font-weight: 500;
   letter-spacing: 1px;
@@ -63,61 +59,106 @@ header {
 .home {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(-45deg, #04619F, #000000);
+  background-color: #1E2025;
   background-size: 200%, 200%;
   position: relative;
-  animation: gradient 20s ease infinite;
-}
-
-@keyframes gradient {
-
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
-
 }
 
 .byline {
   color: #D0D0D0;
   font-family: 'Helvetica', sans-serif;
-  font-size: 16px;
-  font-weight: 700;
+  font-size: 24px;
+  font-weight: bolder;
   letter-spacing: 3px;
   font-weight: normal;
   padding: 10px 0px 10px 40px;
 }
 
 .contact-button {
-  padding: 10px 50px;
+  padding: 12px 55px;
   text-align: center;
   letter-spacing: 3px;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
   font-family: 'Helvatica', sans-serif;
-  margin: 4px 2px;
+  margin: 20px 2px;
   transition-duration: 0.4s;
   cursor: pointer;
   background-color: rgba(255, 255, 255, 0.0);
-  color: #FFBD59;
-  border: 2px solid #FFBD59;
+  color: #ABEF9C;
+  border: 2px solid #ABEF9C;
   position: absolute;
   left: 38px;
   top: 580px;
-  box-shadow: inset 0 0 0 0 #FFBD59;
+  box-shadow: inset 0 0 0 0 #ABEF9C;
   transition: ease-out 0.3s;
 }
 
 .contact-button:hover {
-  box-shadow: inset 300px 0 0 0 #FFBD59;
+  box-shadow: inset 300px 0 0 0 #ABEF9C;
   cursor: pointer;
-  color: #434343;
+  color: #121212;
 }
+
+.container1 {
+  height: 500px;
+  width: 100%;
+  background-color: #1E2025;
+  background-size: 200%, 200%;
+  position: relative;
+  animation: gradient 20s ease infinite;
+}
+
+.memoji {
+  height: 400px;
+  width: auto;
+  position: absolute;
+  top: 225px;
+  left: 910px;
+}
+
+.btn1, .btn2, .btn3 {
+   display: inline-block;
+   padding: 16px 28px;
+   border: 0;
+   text-decoration: none;
+   border-radius: 15px;
+   background-color: rgba(255,255,255,0.1);
+   border: 1px solid rgba(255,255,255,0.1);
+   -webkit-backdrop-filter: blur(30px);
+   color: rgba(255,255,255,0.8);
+   font-size: 16px;
+   letter-spacing: 2px;
+   cursor: pointer;
+   animation: anime 2s infinite ease-in-out alternate;
+   animation-delay: .3s;
+ }
+
+ .btn1:hover, .btn2:hover, .btn3:hover {
+   background-color: rgba(255,255,255,0.2);
+ }
+
+ .btn1 {
+   position: absolute;
+   top: 585px;
+   left: 800px;
+ }
+
+ .btn2 {
+   position: absolute;
+   top: 370px;
+   left: 1195px;
+ }
+
+ .btn3 {
+   position: absolute;
+   top: 220px;
+   left: 850px;
+ }
+
+ @keyframes anime {
+   100% {
+     transform: translateY(15px);
+   }
+ }
