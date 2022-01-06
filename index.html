@@ -29,10 +29,55 @@
       <button class='btn2'>UI Designer 🎨</button>
       <button class='btn3'>Blogger 📝</button>
       <button class="contact-button" type="button">Contact Me!</button>
+      <div class='vline1'></div>
     </div>
 
     <div class='container1'>
-      <h1 class='about'>About Me!</h1>
+      <div class='vline2'></div>
+      <h1 class='quote1'> Creativity is just </h1>
+      <h1 class='quote2'>connecting things.</h1>
+      <p class='quote3'>- Steve Jobs</p>
+      <div class='vline3'></div>
+      <div class='hline1'></div>
+      <div class='vline4'></div>
+      <h1 class='memyself'>Me, Myself and I</h1>
+      <div class='aboutme'>
+        <p>
+          I'm Harsh Pailkar, and I am a second-year student pursuing my 👨🏻‍🎓 bachelors degree in computer science and engineering 📐.<br>
+          <br>I love designing 🎨 and developing 📱 websites and applications from scratch and writing blog pieces 🖌 occationally just for fun.<br>
+          <br>I am currently learning 💡 web dev while brushing up on flutter concepts and acquainting myself with competitive programming 👾 as a side hustle.<br>
+          <br>A keyboardist 🎹, artist 🖍 and photographer 📸 in my freetime. I also enjoy playing videogames 🎮 and listening to songs.
+        </p>
+      </div>
+      <h1 class='bgtitle1'>About</h1>
+      <img class='memoji2' src='images/about.png' alt='about'>
+      <div class='vline5'></div>
+      <div class='hline2'></div>
+      <div class='vline6'></div>
+    </div>
+    <div class='container2'>
+      <h1 class='skills'>Skills & <br> Experience</h1>
+      <h1 class='bgtitle2'>Skills</h1>
+      <span class='Sphere'></span>
+      <script src='https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js'></script>
+      <script>
+        const Texts = [
+          'HTML', 'CSS', 'C++',
+          'Python', 'Java', 'Dart',
+          'Flutter', 'git', 'GitHub', 'UIUX'
+        ];
+
+        var tagCloud = TagCloud('.Sphere', Texts, {
+          radius: 420,
+          maxSpeed: 'normal',
+          initSpeed: 'fast',
+          direction: 135,
+          keep: true
+        });
+
+        var color = '#627D98';
+        document.querySelector('.Sphere').style.color = color;
+      </script>
     </div>
   </div>
 
