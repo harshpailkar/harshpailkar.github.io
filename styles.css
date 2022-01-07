@@ -63,6 +63,15 @@ li, a {
   left: 850px;
 }
 
+.bgtitle3 {
+  font-size: 250px;
+  letter-spacing: -8px;
+  color: #292B33;
+  position: absolute;
+  top: 180px;
+  left: -30px;
+}
+
 .btn1, .btn2, .btn3 {
    display: inline-block;
    padding: 16px 28px;
@@ -156,6 +165,34 @@ li, a {
    width: 100%;
    background-color: #1E2025;
    position: relative;
+ }
+
+ .container3 {
+   height: 1000px;
+   width: 100%;
+   background-color: #1E2025;
+   position: relative;
+ }
+
+ .github1 {
+   font-size: 18px;
+   color: white;
+   padding-top: 30px;
+   padding-bottom: 4px;
+   margin-bottom: 0px;
+ }
+
+ .github2 {
+   font-size: 18px;
+   background: linear-gradient(45deg, #ABEF9C, #10DCC8);
+   -webkit-text-fill-color: transparent;
+   -webkit-background-clip: text;
+ }
+
+ .github2:hover {
+   background: linear-gradient(45deg, #486581, #D9E2EC);
+   -webkit-text-fill-color: transparent;
+   -webkit-background-clip: text;
  }
 
  .hline1 {
@@ -351,6 +388,25 @@ li, a {
 
  .nav_links li a:hover {
    color: #10DCC8;
+ }
+
+ .pro-head {
+   font-size: 50px;
+   color: white;
+   position: absolute;
+   top: 30px;
+   left: 580px;;
+ }
+
+ .pro-para {
+   width: 750px;
+   font-size: 18px;
+   text-align: center;
+   line-height: 1.5;
+   color: #9FB3C8;
+   position: absolute;
+   top: 120px;
+   left: 350px;
  }
 
  .quote1, .quote2 {
