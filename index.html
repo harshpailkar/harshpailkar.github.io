@@ -13,10 +13,9 @@
         <img class='logo' src="images/logo.png" alt="logo">
         <nav>
           <ul class='nav_links'>
-            <li><a href='#'> About </a></li>
-            <li><a href='#'> Skills </a></li>
+            <li><a href='#aboutpage'> About </a></li>
+            <li><a href='#skillspage'> Skills </a></li>
             <li><a href='#'> Projects </a></li>
-            <li><a href='#'> Blogs </a></li>
             <li><a href='#'> Hobbies </a></li>
             <li><a href='#'> Contact Page </a></li>
           </ul>
@@ -39,7 +38,7 @@
       <p class='quote3'>- Steve Jobs</p>
       <div class='vline3'></div>
       <div class='hline1'></div>
-      <div class='vline4'></div>
+      <div id='aboutpage' class='vline4'></div>
       <h1 class='memyself'>Me, Myself and I</h1>
       <div class='aboutme'>
         <p>
@@ -55,21 +54,21 @@
       <div class='hline2'></div>
       <div class='vline6'></div>
     </div>
-    <div class='container2'>
-      <h1 class='skills'>Skills & <br> Experience</h1>
+    <div id='skillspage' class='container2'>
+      <h1 class='skills'>My Expertise</h1>
       <h1 class='bgtitle2'>Skills</h1>
       <span class='Sphere'></span>
       <script src='https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js'></script>
       <script>
         const Texts = [
-          'HTML', 'CSS', 'C++',
+          'HTML5', 'CSS3', 'C++',
           'Python', 'Java', 'Dart',
-          'Flutter', 'git', 'GitHub', 'UIUX'
+          'Flutter', 'Git', 'GitHub', 'UIUX'
         ];
 
         var tagCloud = TagCloud('.Sphere', Texts, {
-          radius: 420,
-          maxSpeed: 'normal',
+          radius: 400,
+          maxSpeed: 'fast',
           initSpeed: 'fast',
           direction: 135,
           keep: true
@@ -78,6 +77,28 @@
         var color = '#627D98';
         document.querySelector('.Sphere').style.color = color;
       </script>
+      <div class='skillpara'>
+        <p>
+          I have been facinated by developing and creating stuff since my 5th grade when I was taught Scratch 🐱.
+          Then gradually when I got introduced to HTML and C++ in high school, the facination turned into passion 🖥.<br>
+          <br>I am always onto learning new things 🤓 and will continue to explore different domains 🤖 in the future as well.
+          Currently, I am also a part of the core team of my university's coding club and I hope to use this platform to learn as well as teach other computer geeks 🧠.
+          <a class='resume' href="https://drive.google.com/file/d/1DWFF56YDbYgRKuvL9QPOgM7WzQ5qK-U5/view?usp=sharing" target='_blank'>[Resume]</a>
+        </p>
+      </div>
+      <div class='skill-bar'>
+        <ul>
+          <li class='html'>HTML5</li>
+          <li class='css'>CSS3</li>
+          <li class='cpp'>C++</li>
+          <li class='py'>Python</li>
+          <li class='fd'>Flutter & Dart</li>
+          <li class='git'>Git & GitHub</li>
+        </ul>
+      </div>
+      <div class='vline7'></div>
+      <div class='hline3'></div>
+      <div class='vline8'></div>
     </div>
   </div>
 

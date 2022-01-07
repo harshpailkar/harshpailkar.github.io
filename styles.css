@@ -6,6 +6,7 @@
 
 body {
   font-family: 'Helvetica', sans-serif;
+  overflow-x: hidden;
 }
 
 h3 {
@@ -151,7 +152,7 @@ li, a {
  }
 
  .container2 {
-   height: 1450px;
+   height: 950px;
    width: 100%;
    background-color: #1E2025;
    position: relative;
@@ -172,12 +173,23 @@ li, a {
  .hline2 {
    transform: translate(-50%, -50%);
    border-top: 2px solid transparent;
-   border-image: linear-gradient(90deg, #486581, #D9E2EC);
+   border-image: linear-gradient(90deg, #A444D8, #10DCC8);
    border-image-slice: 3;
    width: 800px;
    position: absolute;
    top: 1350px;
    left: 721px;
+ }
+
+ .hline3 {
+   transform: translate(-50%, -50%);
+   border-top: 2px solid transparent;
+   border-image: linear-gradient(90deg, #423D33, #D3CEC4);
+   border-image-slice: 3;
+   width: 400px;
+   position: absolute;
+   top: 850px;
+   left: 519px;
  }
 
  .home {
@@ -186,6 +198,102 @@ li, a {
    background-color: #1E2025;
    background-size: 200%, 200%;
    position: relative;
+ }
+
+ .html, .css, .cpp, .py, .fd, .git{
+   position: relative;
+   list-style: none;
+   margin: 40px 0;
+   font-weight: bold;
+ }
+
+ .html:before, .css:before, .cpp:before, .py:before, .fd:before, .git:before {
+   content: "";
+   position: absolute;
+   top: calc(100% + 10px);
+   left: 0;
+   width: 100%;
+   height: 2px;
+   background: 15px;
+   background-color: #292B33;
+ }
+
+ .html:after, .css:after, .cpp:after, .py:after, .fd:after, .git:after {
+   content: "";
+   position: absolute;
+   top: calc(100% + 10px);
+   left: 0;
+   width: 0;
+   height: 3px;
+   animation-duration: .7s;
+   animation-timing-function: ease;
+   animation-fill-mode: forwards;
+ }
+
+ .html:after {
+   background-color: #ABEF9C;
+   animation-name: html;
+ }
+
+ @keyframes html {
+   to {
+     width: 80%;
+   }
+ }
+
+ .css:after {
+   background-color: #10DCC8;
+   animation-name: css;
+ }
+
+ @keyframes css {
+   to {
+     width: 70%;
+   }
+ }
+
+ .cpp:after {
+   background-color: #A444D8;
+   animation-name: cpp;
+ }
+
+ @keyframes cpp {
+   to {
+     width: 80%;
+   }
+ }
+
+ .py:after {
+   background-color: #ABEF9C;
+   animation-name: py;
+ }
+
+ @keyframes py {
+   to {
+     width: 80%;
+   }
+ }
+
+ .fd:after {
+   background-color: #10DCC8;
+   animation-name: fd;
+ }
+
+ @keyframes fd {
+   to {
+     width: 60%;
+   }
+ }
+
+ .git:after {
+   background-color: #A444D8;
+   animation-name: git;
+ }
+
+ @keyframes git {
+   to {
+     width: 80%;
+   }
  }
 
  .intro {
@@ -201,7 +309,7 @@ li, a {
    width: auto;
    height: 225px;
    cursor: pointer;
-   margin-right: 580px;
+   margin-right: 670px;
  }
 
  .memoji {
@@ -260,7 +368,7 @@ li, a {
 
  .quote2 {
    padding-left: 20px;
-   background: linear-gradient(45deg, #ABEF9C, #10DCC8);
+   background: linear-gradient(45deg, #A444D8, #10DCC8);
    background-size: 200%;
    -webkit-text-fill-color: transparent;
    -webkit-background-clip: text;
@@ -287,6 +395,24 @@ li, a {
    padding-top: 25px;
  }
 
+ .resume {
+   margin-left: 5px;
+ }
+
+ .resume:hover {
+   color: #627D98;
+ }
+
+ .skillpara {
+   width: 600px;
+   font-size: 18px;
+   line-height: 1.5;
+   color: #9FB3C8;
+   position: absolute;
+   top: 112px;
+   left: 50px;
+ }
+
  .skills {
    font-size: 50px;
    color: white;
@@ -294,6 +420,15 @@ li, a {
    top: 30px;
    left: 165px;
    text-align: center;
+ }
+
+ .skill-bar {
+   width: 600px;
+   margin: 50px auto 0;
+   padding: 10px;
+   position: absolute;
+   top: 280px;
+   left: 40px;
  }
 
  .tagcloud {
@@ -306,7 +441,7 @@ li, a {
    font-size: 24px;
    position: absolute;
    top: 10px;
-   left: 620px;
+   left: 650px;
  }
 
  .tagcloud--item:hover {
@@ -361,7 +496,7 @@ li, a {
  .vline5 {
    transform: translate(-50%, -50%);
    border-left: 2px solid transparent;
-   border-image: linear-gradient(45deg, #486581, #D9E2EC);
+   border-image: linear-gradient(45deg, #A444D8, #10DCC8);
    border-image-slice: 3;
    height: 100px;
    position: absolute;
@@ -372,10 +507,32 @@ li, a {
  .vline6 {
    transform: translate(-50%, -50%);
    border-left: 2px solid transparent;
-   border-image: linear-gradient(45deg, #486581, #D9E2EC);
+   border-image: linear-gradient(45deg, #A444D8, #10DCC8);
    border-image-slice: 3;
    height: 100px;
    position: absolute;
    top: 1400px;
    left: 322px;
+ }
+
+ .vline7 {
+   transform: translate(-50%, -50%);
+   border-left: 2px solid transparent;
+   border-image: linear-gradient(45deg, #423D33, #D3CEC4);
+   border-image-slice: 3;
+   height: 100px;
+   position: absolute;
+   top: 800px;
+   left: 320px;
+ }
+
+ .vline8 {
+   transform: translate(-50%, -50%);
+   border-left: 2px solid transparent;
+   border-image: linear-gradient(45deg, #423D33, #D3CEC4);
+   border-image-slice: 3;
+   height: 100px;
+   position: absolute;
+   top: 899px;
+   left: 50%;
  }
