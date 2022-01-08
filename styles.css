@@ -390,6 +390,31 @@ li, a {
    color: #10DCC8;
  }
 
+ .cards {
+   width: 100%;
+   height: auto;
+ }
+
+ .p1-img {
+   width: 550px;
+   height: 300px;
+   position: absolute;
+   top: 500px;
+   left: 140px;
+   border-radius: 20px;
+   border: 1px solid white;
+ }
+
+ .p2-img {
+   width: 550px;
+   height: 300px;
+   position: absolute;
+   top: 500px;
+   left: 740px;
+   border-radius: 20px;
+   border: 1px solid white;
+ }
+
  .pro-head {
    font-size: 50px;
    color: white;
@@ -590,5 +615,16 @@ li, a {
    height: 100px;
    position: absolute;
    top: 899px;
+   left: 50%;
+ }
+
+ .vline9 {
+   transform: translate(-50%, -50%);
+   border-left: 2px solid transparent;
+   border-image: linear-gradient(45deg, #ABEF9C, #10DCC8);
+   border-image-slice: 3;
+   height: 100px;
+   position: absolute;
+   top: 950px;
    left: 50%;
  }
