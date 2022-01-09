@@ -72,6 +72,15 @@ li, a {
   left: -30px;
 }
 
+.bgtitle4 {
+  font-size: 250px;
+  letter-spacing: -8px;
+  color: #292B33;
+  position: absolute;
+  top: 100px;
+  left: 580px;
+}
+
 .btn1, .btn2, .btn3 {
    display: inline-block;
    padding: 16px 28px;
@@ -126,6 +135,65 @@ li, a {
   padding: 10px 0px 10px 40px;
 }
 
+.card {
+  width: 400px;
+  height: 500px;
+  background: rgba(255,255,255,0.05);
+  margin: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  position: absolute;
+  top: 220px;
+  left: 920px;
+}
+
+.card .c-img {
+  position: absolute;
+  top: 20px;
+  left: 50px;
+}
+
+.card .c-img .me-img {
+  height: 300px;
+  width: auto;
+}
+
+.card .logo .iglogo {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 400px;
+  left: 65px;
+}
+
+.card .logo .twitlogo {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 400px;
+  left: 185px;
+}
+
+.card .logo .linklogo {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 400px;
+  left: 305px;
+}
+
+.contact {
+  font-size: 50px;
+  color: white;
+  position: absolute;
+  top: 130px;
+  left: 200px;
+}
+
  .contact-button {
    padding: 12px 55px;
    text-align: center;
@@ -168,6 +236,13 @@ li, a {
  }
 
  .container3 {
+   height: 1001px;
+   width: 100%;
+   background-color: #1E2025;
+   position: relative;
+ }
+
+ .container4 {
    height: 1000px;
    width: 100%;
    background-color: #1E2025;
@@ -227,6 +302,17 @@ li, a {
    position: absolute;
    top: 850px;
    left: 519px;
+ }
+
+ .hline4 {
+   transform: translate(-50%, -50%);
+   border-top: 2px solid transparent;
+   border-image: linear-gradient(90deg, #ABEF9C, #10DCC8);
+   border-image-slice: 3;
+   width: 400px;
+   position: absolute;
+   top: 1000px;
+   left: 521px;
  }
 
  .home {
@@ -346,7 +432,7 @@ li, a {
    width: auto;
    height: 225px;
    cursor: pointer;
-   margin-right: 670px;
+   margin-right: 770px;
  }
 
  .memoji {
@@ -358,11 +444,11 @@ li, a {
  }
 
  .memoji2 {
-   width: 600px;
+   width: 550px;
    height: auto;
    position: absolute;
-   top: 610px;
-   left: 80px;
+   top: 630px;
+   left: 120px;
  }
 
  .memyself {
@@ -390,11 +476,6 @@ li, a {
    color: #10DCC8;
  }
 
- .cards {
-   width: 100%;
-   height: auto;
- }
-
  .p1-img {
    width: 550px;
    height: 300px;
@@ -420,7 +501,7 @@ li, a {
    color: white;
    position: absolute;
    top: 30px;
-   left: 580px;;
+   left: 580px;
  }
 
  .pro-para {
@@ -478,10 +559,15 @@ li, a {
 
  .resume {
    margin-left: 5px;
+   background: linear-gradient(45deg, #ABEF9C, #10DCC8);
+   -webkit-text-fill-color: transparent;
+   -webkit-background-clip: text;
  }
 
  .resume:hover {
-   color: #627D98;
+   background: linear-gradient(45deg, #486581, #D9E2EC);
+   -webkit-text-fill-color: transparent;
+   -webkit-background-clip: text;
  }
 
  .skillpara {
@@ -627,4 +713,15 @@ li, a {
    position: absolute;
    top: 950px;
    left: 50%;
+ }
+
+ .vline10 {
+   transform: translate(-50%, -50%);
+   border-left: 2px solid transparent;
+   border-image: linear-gradient(45deg, #ABEF9C, #10DCC8);
+   border-image-slice: 3;
+   height: 100px;
+   position: absolute;
+   top: 50px;
+   left: 322px;
  }
