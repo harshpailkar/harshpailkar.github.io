@@ -243,7 +243,7 @@ li, a {
  }
 
  .container4 {
-   height: 1000px;
+   height: 850px;
    width: 100%;
    background-color: #1E2025;
    position: relative;
@@ -732,7 +732,7 @@ li, a {
   background: transparent;
   border-radius: 20px;
   position: absolute;
-  top: 252px;
+  top: 260px;
   left: 80px;
 }
 
@@ -761,7 +761,7 @@ form .dbl-field{
   position: absolute;
   top: 50%;
   left: 18px;
-  color: #fff;
+  color: #999999;
   font-size: 17px;
   pointer-events: none;
   transform: translateY(-50%);
@@ -774,13 +774,14 @@ form .message textarea{
   outline: none;
   padding: 0 18px 0 48px;
   font-size: 16px;
+  color: #9FB3C8;
   border: 1px solid #373b45;
   background-color: #373b45;
 }
 
 .field input::placeholder,
 .message textarea::placeholder{
-  color: #fff;
+  color: #999999;
 }
 
 .field input:focus,
@@ -808,6 +809,8 @@ form .message textarea{
   max-height: 250px;
   max-width: 100%;
   min-width: 100%;
+  font-family: 'Helvetica', sans-serif;
+
   padding: 15px 20px 0 48px;
 }
 
