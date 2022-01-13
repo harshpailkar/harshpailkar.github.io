@@ -73,12 +73,12 @@ li, a {
 }
 
 .bgtitle4 {
-  font-size: 250px;
+  font-size: 450px;
   letter-spacing: -8px;
   color: #292B33;
   position: absolute;
-  top: 100px;
-  left: 580px;
+  top: 60px;
+  left: 610px;
 }
 
 .btn1, .btn2, .btn3 {
@@ -725,3 +725,156 @@ li, a {
    top: 50px;
    left: 322px;
  }
+
+ .wrapper{
+  width: 715px;
+  height: 500px;
+  background: transparent;
+  border-radius: 20px;
+  position: absolute;
+  top: 252px;
+  left: 80px;
+}
+
+.wrapper form{
+  margin: 35px 30px;
+}
+.wrapper form.disabled{
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+form .dbl-field{
+  display: flex;
+  margin-bottom: 25px;
+  justify-content: space-between;
+}
+
+.dbl-field .field{
+  height: 50px;
+  display: flex;
+  position: relative;
+  width: calc(100% / 2 - 13px);
+}
+
+.wrapper form i{
+  position: absolute;
+  top: 50%;
+  left: 18px;
+  color: #fff;
+  font-size: 17px;
+  pointer-events: none;
+  transform: translateY(-50%);
+}
+
+form .field input,
+form .message textarea{
+  width: 100%;
+  height: 100%;
+  outline: none;
+  padding: 0 18px 0 48px;
+  font-size: 16px;
+  border: 1px solid #373b45;
+  background-color: #373b45;
+}
+
+.field input::placeholder,
+.message textarea::placeholder{
+  color: #fff;
+}
+
+.field input:focus,
+.message textarea:focus{
+  padding-left: 47px;
+  border: 2px solid #10BCC8;
+}
+
+.field input:focus ~ i,
+.message textarea:focus ~ i{
+  color: #10BCC8;
+}
+
+form .message{
+  position: relative;
+}
+
+form .message i{
+  top: 30px;
+  font-size: 20px;
+}
+
+form .message textarea{
+  min-height: 250px;
+  max-height: 250px;
+  max-width: 100%;
+  min-width: 100%;
+  padding: 15px 20px 0 48px;
+}
+
+form .message textarea::-webkit-scrollbar{
+  width: 0px;
+}
+
+.message textarea:focus{
+  padding-top: 14px;
+}
+
+form .button-area{
+  margin: 25px 0;
+  display: flex;
+  align-items: center;
+}
+
+.button-area button{
+  padding: 12px 55px;
+  text-align: center;
+  letter-spacing: 3px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: 'Helvatica', sans-serif;
+  margin: 20px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.0);
+  color: #10BCC8;
+  border: 2px solid #10BCC8;
+  box-shadow: inset 0 0 0 0 #10BCC8;
+  transition: ease-out 0.3s;
+}
+
+.button-area button:hover{
+  box-shadow: inset 300px 0 0 0 #10BCC8;
+  cursor: pointer;
+  color: #121212;
+}
+
+.button-area span{
+  font-size: 17px;
+  margin-left: 30px;
+  display: none;
+}
+
+@media (max-width: 600px){
+  .wrapper header{
+    text-align: center;
+  }
+
+  .wrapper form{
+    margin: 35px 20px;
+  }
+
+  form .dbl-field{
+    flex-direction: column;
+    margin-bottom: 0px;
+  }
+
+  form .dbl-field .field{
+    width: 100%;
+    height: 45px;
+    margin-bottom: 20px;
+  }
+
+  form .message textarea{
+    resize: none;
+  }
