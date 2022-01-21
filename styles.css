@@ -40,9 +40,9 @@ li, a {
   line-height: 1.5;
   color: #9FB3C8;
   text-align: center;
-  position: absolute;
-  top: 700px;
-  left: 920px;
+  position: relative;
+  top: 330px;
+  right: -800px;
 }
 
 .bgtitle1 {
@@ -275,11 +275,11 @@ li, a {
    border-top: 2px solid transparent;
    border-image: linear-gradient(90deg, #486581, #D9E2EC);
    border-image-slice: 3;
-   width: 400px;
+   width: 300px;
    position: absolute;
    top: 466px;
    left: 50%;
-   margin-left: 199px;
+   margin-left: 149px;
  }
 
  .hline2 {
@@ -419,6 +419,12 @@ li, a {
    }
  }
 
+ .imgbtn {
+   position: relative;
+   top: -575px;
+   right: 50px;
+ }
+
  .intro {
    color: white;
    font-family: 'Helvetica', sans-serif;
@@ -454,9 +460,9 @@ li, a {
  .memyself {
    font-size: 50px;
    color: white;
-   position: absolute;
-   top: 590px;
-   left: 920px;
+   position: relative;
+   top: 290px;
+   right: -800px;
  }
 
  .nav_links {
@@ -657,7 +663,7 @@ li, a {
    position: absolute;
    top: 515px;
    left: 50%;
-   margin-left: 400px;
+   margin-left: 300px;
  }
 
  .vline5 {
